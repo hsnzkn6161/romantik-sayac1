@@ -12,12 +12,13 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     overflow-x:hidden;
-overflow-y:auto;
+    overflow-y:auto;
     background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#ffd1dc,#fbc2eb);
     background-size:400% 400%;
     animation:bgMove 15s ease infinite;
+    padding:20px 0;
 }
 
 @keyframes bgMove{
@@ -63,7 +64,7 @@ overflow-y:auto;
 
 /* Ana Kart */
 .card{
-    width:90%;
+    width:min(92vw,420px);
     max-width:420px;
     padding:30px;
     border-radius:30px;
