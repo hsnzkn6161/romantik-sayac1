@@ -196,3 +196,45 @@ body{
     align-items:center;
     z-index:9999;
 }
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+
+    body{
+        overflow-y:auto;
+        align-items:flex-start;
+        padding:20px 0;
+    }
+
+    .card{
+        width:95%;
+        max-width:420px;
+        margin:20px auto;
+        padding:20px;
+    }
+
+    .title{
+        font-size:42px;
+    }
+
+    .photo-frame{
+        width:160px;
+        height:160px;
+    }
+
+    .day-box{
+        width:100%;
+    }
+
+    .time-container{
+        gap:10px;
+    }
+
+    .time-box{
+        width:30%;
+        padding:15px 5px;
+    }
+
+    .time-box span{
+        font-size:24px;
+    }
+}
