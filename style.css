@@ -311,3 +311,37 @@ body{
     }
 
 }
+/* ========================= */
+/* KAYAN YILDIZ */
+/* ========================= */
+
+#shooting-star{
+    position:fixed;
+    top:-100px;
+    left:-100px;
+    width:180px;
+    height:2px;
+    background:linear-gradient(to right, white, transparent);
+    transform:rotate(-35deg);
+    opacity:0;
+    pointer-events:none;
+    z-index:9999;
+}
+
+#shooting-star.active{
+    animation:shoot 1.6s linear;
+}
+
+@keyframes shoot{
+
+    0%{
+        opacity:1;
+        transform:translate(0,0) rotate(-35deg);
+    }
+
+    100%{
+        opacity:0;
+        transform:translate(1200px,700px) rotate(-35deg);
+    }
+
+}
