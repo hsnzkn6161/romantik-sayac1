@@ -196,3 +196,36 @@ body{
     align-items:center;
     z-index:9999;
 }
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Hasan ❤️ Merve kısmı */
+.names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.names h1 {
+    margin: 0;
+}
