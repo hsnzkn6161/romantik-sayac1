@@ -76,13 +76,23 @@ body{
 
 /* Başlık */
 .title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    flex-wrap:nowrap;
     font-family:'Great Vibes', cursive;
-    font-size:clamp(2.2rem, 8vw, 3rem);
+    font-size:42px;
     color:white;
     text-shadow:0 0 15px rgba(255,255,255,.7);
-    text-align:center;
+}
+
+.title span{
     white-space:nowrap;
-    line-height:1.2;
+}
+
+.heart-inline{
+    font-size:32px;
 }
 
 .date{
