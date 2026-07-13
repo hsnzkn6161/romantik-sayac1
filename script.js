@@ -107,3 +107,23 @@ for(let i=0;i<120;i++){
     stars.appendChild(star);
 
 }
+/* ========================= */
+/* KAYAN YILDIZ */
+/* ========================= */
+
+const shootingStar = document.getElementById("shooting-star");
+
+function startShootingStar(){
+
+    shootingStar.style.top = Math.random()*200 + "px";
+    shootingStar.style.left = "-250px";
+
+    shootingStar.classList.add("active");
+
+    setTimeout(()=>{
+        shootingStar.classList.remove("active");
+    },1600);
+
+}
+
+setInterval(startShootingStar,18000);
