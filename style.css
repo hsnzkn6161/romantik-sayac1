@@ -240,3 +240,44 @@ body{
         font-size:24px;
     }
 }
+
+/* ========================= */
+/* YILDIZLAR */
+/* ========================= */
+
+#stars{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    opacity:.8;
+    animation:twinkle linear infinite;
+}
+
+@keyframes twinkle{
+
+    0%{
+        opacity:.2;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.8);
+    }
+
+    100%{
+        opacity:.2;
+        transform:scale(1);
+    }
+
+}
