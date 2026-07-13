@@ -229,3 +229,19 @@ body {
 .names h1 {
     margin: 0;
 }
+@media (max-width:600px){
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .names {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+}
