@@ -72,11 +72,15 @@ body{
 
 /* Başlık */
 .title{
-    font-family:'Great Vibes',cursive;
-    font-size:clamp(32px,8vw,48px);
-    color:white;
-    text-shadow:0 0 15px rgba(255,255,255,.7);
+    font-family:'Great Vibes', cursive;
+    font-size:clamp(42px, 9vw, 68px);
+    font-weight:400;
+    color:#fff;
+    text-shadow:
+        0 0 10px rgba(255,255,255,.8),
+        0 0 20px rgba(255,79,136,.6);
     white-space:nowrap;
+    letter-spacing:1px;
 }
 
 .date{
