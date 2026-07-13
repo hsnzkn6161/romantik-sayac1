@@ -64,6 +64,9 @@ body{
 
 /* Ana Kart */
 .card{
+    animation:
+    cardFloat 4s ease-in-out infinite,
+    cardGlow 3s ease-in-out infinite;
     width:min(92vw,420px);
     max-width:420px;
     padding:30px;
@@ -278,6 +281,33 @@ body{
     100%{
         opacity:.2;
         transform:scale(1);
+    }
+
+}
+@keyframes cardFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+}
+
+@keyframes cardGlow{
+
+    0%,100%{
+        box-shadow:
+        0 20px 40px rgba(0,0,0,.15),
+        0 0 20px rgba(255,255,255,.15);
+    }
+
+    50%{
+        box-shadow:
+        0 25px 55px rgba(0,0,0,.25),
+        0 0 45px rgba(255,255,255,.45);
     }
 
 }
