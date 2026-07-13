@@ -273,3 +273,49 @@ body{
         transform:scale(1.2);
     }
 }
+.title-wrapper{
+    position:relative;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+#floating-hearts{
+    position:absolute;
+    width:100%;
+    height:180px;
+    left:0;
+    bottom:-10px;
+    pointer-events:none;
+    overflow:visible;
+}
+
+.floating-heart{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    color:#ff5c8a;
+    opacity:0;
+    animation:riseHeart linear forwards;
+    text-shadow:0 0 10px rgba(255,255,255,.8);
+}
+
+@keyframes riseHeart{
+
+    0%{
+        transform:translate(-50%,0) scale(.7);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(calc(-50% + var(--x)), -180px) scale(1.4);
+        opacity:0;
+    }
+
+}
