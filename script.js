@@ -79,3 +79,28 @@ letterModal.onclick = function (e) {
         letterModal.style.display = "none";
     }
 }
+const heartBox = document.getElementById("floating-hearts");
+
+function createHeart(){
+
+    const heart = document.createElement("span");
+
+    heart.className = "floating-heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.setProperty("--x",(Math.random()*120-60)+"px");
+
+    heart.style.fontSize=(14+Math.random()*16)+"px";
+
+    heart.style.animationDuration=(2.5+Math.random()*2)+"s";
+
+    heartBox.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },4500);
+
+}
+
+setInterval(createHeart,450);
