@@ -85,12 +85,7 @@ body{
     font-family:'Great Vibes',cursive;
     font-size:48px;
     color:white;
-    text-align:center;
-    text-shadow:
-        0 0 10px rgba(255,255,255,.8),
-        0 0 25px rgba(255,80,150,.8);
-
-    animation:titleGlow 3s ease-in-out infinite;
+    text-shadow:0 0 15px rgba(255,255,255,.7);
 }
 
 @keyframes titleGlow{
