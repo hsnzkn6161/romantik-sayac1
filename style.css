@@ -82,7 +82,7 @@ body{
 
 /* Başlık */
 .title{
-    font-family:'Great Vibes',cursive;
+    font-family:'Great Vibes', cursive;
     font-size:48px;
     color:white;
     text-shadow:0 0 15px rgba(255,255,255,.7);
@@ -286,4 +286,7 @@ body{
         transform:translateY(-110vh);
         opacity:0;
     }
+}
+.title{
+    font-family: 'Great Vibes' !important;
 }
