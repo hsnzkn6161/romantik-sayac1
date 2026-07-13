@@ -227,15 +227,40 @@ body{
 }
 
 .floating-hearts::before{
-    content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+    content:"❤️";
     position:absolute;
-    width:100%;
-    left:0;
-    bottom:0;
+    left:50%;
+    bottom:-50px;
     font-size:25px;
-    letter-spacing:50px;
-    opacity:.25;
-    animation:heartFloat 12s linear infinite;
+    opacity:.4;
+    animation:heartFloat 8s linear infinite;
+}
+
+.floating-hearts::after{
+    content:"❤️";
+    position:absolute;
+    left:30%;
+    bottom:-80px;
+    font-size:18px;
+    opacity:.3;
+    animation:heartFloat 10s linear infinite;
+}
+
+@keyframes heartFloat{
+
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.5;
+    }
+
+    100%{
+        transform:translateY(-110vh) scale(1.3);
+        opacity:0;
+    }
 }
 
 @keyframes heartFloat{
