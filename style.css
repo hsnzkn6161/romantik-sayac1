@@ -61,32 +61,6 @@ body{
 
 /* Ana Kart */
 .card{
-    .card::before{
-    content:"";
-    position:absolute;
-    top:-150%;
-    left:-60%;
-    width:50%;
-    height:400%;
-    background:linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.5),
-        transparent
-    );
-    transform:rotate(25deg);
-    animation:shine 7s linear infinite;
-}
-
-@keyframes shine{
-    0%{
-        left:-60%;
-    }
-
-    100%{
-        left:150%;
-    }
-}
     width:90%;
     max-width:420px;
     margin:40px auto;
@@ -95,9 +69,12 @@ body{
     background:rgba(255,255,255,.18);
     backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,.4);
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.15),
+        0 0 30px rgba(255,100,150,.35);
     text-align:center;
     display:none;
+}
 
     position:relative;
     overflow:hidden;
