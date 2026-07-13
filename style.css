@@ -14,7 +14,7 @@ body{
     justify-content:center;
     align-items:center;
     overflow-x: hidden;
-overflow-y: auto;
+    overflow-y: auto;
     background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#ffd1dc,#fbc2eb);
     background-size:400% 400%;
     animation:bgMove 15s ease infinite;
