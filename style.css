@@ -194,3 +194,46 @@ body{
     align-items:center;
     z-index:9999;
 }
+@media (max-width:768px){
+
+    body{
+        align-items:flex-start;
+        padding:20px 10px;
+    }
+
+    .card{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+        margin:20px auto;
+    }
+
+    .title{
+        font-size:38px;
+        white-space:nowrap;
+    }
+
+    .photo-frame{
+        width:150px;
+        height:150px;
+    }
+
+    .day-box{
+        width:100%;
+        max-width:220px;
+    }
+
+    .time-container{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .time-box{
+        width:70px;
+        padding:12px 8px;
+    }
+
+    .time-box span{
+        font-size:24px;
+    }
+}
