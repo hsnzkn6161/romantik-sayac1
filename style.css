@@ -61,24 +61,10 @@ body{
 
 /* Ana Kart */
 .card{
-    width:90%;
+    width:95%;
     max-width:420px;
     margin:40px auto;
-    padding:30px;
-    border-radius:30px;
-    background:rgba(255,255,255,.18);
-    backdrop-filter:blur(18px);
-    border:1px solid rgba(255,255,255,.4);
-    box-shadow:
-        0 20px 40px rgba(0,0,0,.15),
-        0 0 30px rgba(255,100,150,.35);
-    text-align:center;
-    display:none;
-}
-
-    position:relative;
-    overflow:hidden;
-}
+    padding:20px;
 
 /* Başlık */
 .title{
