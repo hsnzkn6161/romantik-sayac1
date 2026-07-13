@@ -211,8 +211,6 @@ body {
 .container {
     min-height: 100vh;
     height: auto;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 
