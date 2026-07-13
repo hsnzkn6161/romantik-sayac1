@@ -12,13 +12,11 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:flex-start;
-    overflow-x:hidden;
-    overflow-y:auto;
+    align-items:center;
+    overflow:hidden;
     background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#ffd1dc,#fbc2eb);
     background-size:400% 400%;
     animation:bgMove 15s ease infinite;
-    padding:20px 0;
 }
 
 @keyframes bgMove{
@@ -64,10 +62,7 @@ body{
 
 /* Ana Kart */
 .card{
-    animation:
-    cardFloat 4s ease-in-out infinite,
-    cardGlow 3s ease-in-out infinite;
-    width:min(92vw,420px);
+    width:90%;
     max-width:420px;
     padding:30px;
     border-radius:30px;
@@ -200,148 +195,4 @@ body{
     justify-content:center;
     align-items:center;
     z-index:9999;
-}
-/* Mobil Uyumluluk */
-@media (max-width: 768px) {
-
-    body{
-        overflow-y:auto;
-        align-items:flex-start;
-        padding:20px 0;
-    }
-
-    .card{
-        width:95%;
-        max-width:420px;
-        margin:20px auto;
-        padding:20px;
-    }
-
-    .title{
-        font-size:42px;
-    }
-
-    .photo-frame{
-        width:160px;
-        height:160px;
-    }
-
-    .day-box{
-        width:100%;
-    }
-
-    .time-container{
-        gap:10px;
-    }
-
-    .time-box{
-        width:30%;
-        padding:15px 5px;
-    }
-
-    .time-box span{
-        font-size:24px;
-    }
-}
-
-/* ========================= */
-/* YILDIZLAR */
-/* ========================= */
-
-#stars{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
-    z-index:-1;
-    pointer-events:none;
-}
-
-.star{
-    position:absolute;
-    width:2px;
-    height:2px;
-    background:white;
-    border-radius:50%;
-    opacity:.8;
-    animation:twinkle linear infinite;
-}
-
-@keyframes twinkle{
-
-    0%{
-        opacity:.2;
-        transform:scale(1);
-    }
-
-    50%{
-        opacity:1;
-        transform:scale(1.8);
-    }
-
-    100%{
-        opacity:.2;
-        transform:scale(1);
-    }
-
-}
-@keyframes cardFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-8px);
-    }
-
-}
-
-@keyframes cardGlow{
-
-    0%,100%{
-        box-shadow:
-        0 20px 40px rgba(0,0,0,.15),
-        0 0 20px rgba(255,255,255,.15);
-    }
-
-    50%{
-        box-shadow:
-        0 25px 55px rgba(0,0,0,.25),
-        0 0 45px rgba(255,255,255,.45);
-    }
-
-}
-/* ========================= */
-/* KAYAN YILDIZ */
-/* ========================= */
-
-#shooting-star{
-    position:fixed;
-    top:-100px;
-    left:-100px;
-    width:180px;
-    height:2px;
-    background:linear-gradient(to right, white, transparent);
-    transform:rotate(-35deg);
-    opacity:0;
-    pointer-events:none;
-    z-index:9999;
-}
-
-#shooting-star.active{
-    animation:shoot 1.6s linear;
-}
-
-@keyframes shoot{
-
-    0%{
-        opacity:1;
-        transform:translate(0,0) rotate(-35deg);
-    }
-
-    100%{
-        opacity:0;
-        transform:translate(1200px,700px) rotate(-35deg);
-    }
-
 }
